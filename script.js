@@ -56,9 +56,7 @@ document.addEventListener("DOMContentLoaded", () =>{
                         deleteModal.style.display = "block";
                         disableOtherActivities()
                     });
-                    // Вам необходимо добавить следующую строку, чтобы установить путь к изображению
                     img.src = "cancel.svg";
-                    // Затем добавьте img в ячейку (cell)
                     cell.appendChild(img);
                 } else {
                     cell.innerHTML = cellText;
@@ -208,16 +206,16 @@ document.addEventListener("DOMContentLoaded", () =>{
     yesButton.addEventListener("click", () => {
         if (currentUserIdToDelete) {
             usersData = usersData.filter(user => user.id !== currentUserIdToDelete);
-            handleUserDeletion(); // Вызываем функцию после удаления пользователя
+            handleUserDeletion(); 
             currentUserIdToDelete = null;
-            deleteModal.style.display = "none"; // Закрываем модальное окно
+            deleteModal.style.display = "none";
             console.log('Yes')
         }
     });
 
     noButton.addEventListener("click", () => {
         currentUserIdToDelete = null;
-        deleteModal.style.display = "none"; // Закрываем модальное окно
+        deleteModal.style.display = "none";
         enableOtherActivities()
         console.log('NO')
 
@@ -244,7 +242,7 @@ document.addEventListener("DOMContentLoaded", () =>{
         nextPageLink.style.pointerEvents = "auto";
 
         clearBtn.disabled = false
-        clearBtn.style.display = "block"; // Показываем кнопку "Очистить фильтр"
+        clearBtn.style.display = "block"; 
 
     }
     function handleUserDeletion() {
