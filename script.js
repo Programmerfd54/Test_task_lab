@@ -1,5 +1,5 @@
 "use strict";
-document.addEventListener("DOMContentLoaded", () =>{
+
     const url = "https://5ebbb8e5f2cfeb001697d05c.mockapi.io/users";
     const table = document.getElementById("table")
 
@@ -252,5 +252,3 @@ document.addEventListener("DOMContentLoaded", () =>{
         clearBtn.disabled = false;
         clearBtn.style.display = "block";
     }
-
-});
