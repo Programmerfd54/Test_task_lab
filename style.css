@@ -1,23 +1,29 @@
+/* Вендорные префиксы */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;1,600&family=Open+Sans:ital,wght@0,500;0,600;1,400;1,500&family=Roboto&display=swap');
 
-*{
+/* Сброс стилей и общие стили */
+* {
     margin: 0;
     padding: 0;
     font-family: Montserrat, sans-serif;
 }
-body{
+
+/* Основные стили */
+body {
     background: #f7f7f7;
 }
-.base{
+
+.base {
     display: grid;
-    grid-gap: 5px ;
+    grid-gap: 5px;
 }
 
-.base h1{
+.base h1 {
     margin-left: 30px;
-    margin-top: 20px ;
+    margin-top: 20px;
 }
-.base .search{
+
+.base .search {
     width: 941px;
     height: 120px;
     margin-top: 20px;
@@ -27,65 +33,67 @@ body{
     box-shadow: 10px 10px 10px 10px rgba(5, 5, 5, 0.02);
 }
 
-.base .search .custom-input{
-    margin: 15px 15px 15px 15px;
+.base .search .custom-input {
+    margin: 15px;
     width: 800px;
     height: 40px;
     border-radius: 4px;
-    background: #ECEFF0;
+    background: #eceff0;
     outline: none;
     border: none;
     padding-left: 33px;
     position: absolute;
 }
-.base .search .custom-input::placeholder{
-    color: #9EAAB4 ;
-}
-.base .search i {
 
-    margin-left: 25px ;
+.base .search .custom-input::placeholder {
+    color: #9eaab4;
+}
+
+.base .search i {
+    margin-left: 25px;
     margin-top: 27px;
     position: absolute;
-    color: #9EAAB4;
+    color: #9eaab4;
     display: inline-block;
 }
 
-.base .search .clear{
+.base .search .clear {
     position: absolute;
     padding-left: 15px;
     margin-top: 75px;
     font-weight: bold;
     cursor: pointer;
-
 }
-.base .search img{
+
+.base .search img {
     width: 20px;
     height: 20px;
-
 }
 
 /* Layout of table */
-.info-table{
+.info-table {
     position: relative;
 }
 
-.info-table .sort{
+.info-table .sort {
     position: absolute;
     margin-top: 35px;
     margin-left: 27px;
-    color: #9EAAB4;
-
+    color: #9eaab4;
 }
-.info-table .sort p a{
+
+.info-table .sort p a {
     border-bottom: 2px dotted #333333;
     display: inline;
     cursor: pointer;
     font-weight: 500;
+}
 
+.info-table .sort p a:active {
+    color: #333333;
 }
-.info-table .sort p a:active{
-    color: #333333 ;
-}
+
+
 
 
 .custom-table {
