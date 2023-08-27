@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;1,600&family=Open+Sans:ital,wght@0,500;0,600;1,400;1,500&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+}
+body{
+    background: #f7f7f7;
+}
+.base{
+    display: grid;
+    grid-gap: 5px ;
+}
+
+.base h1{
+    margin-left: 30px;
+    margin-top: 20px ;
+}
+.base .search{
+    width: 941px;
+    height: 120px;
+    margin-top: 20px;
+    margin-left: 30px;
+    border-radius: 7px;
+    background: #ffffff;
+    box-shadow: 10px 10px 10px 10px rgba(5, 5, 5, 0.02);
+}
+
+.base .search .custom-input{
+    margin: 15px 15px 15px 15px;
+    width: 800px;
+    height: 40px;
+    border-radius: 4px;
+    background: #ECEFF0;
+    outline: none;
+    border: none;
+    padding-left: 33px;
+    position: absolute;
+}
+.base .search .custom-input::placeholder{
+    color: #9EAAB4 ;
+}
+.base .search i {
+
+    margin-left: 25px ;
+    margin-top: 27px;
+    position: absolute;
+    color: #9EAAB4;
+    display: inline-block;
+}
+
+.base .search .clear{
+    position: absolute;
+    padding-left: 15px;
+    margin-top: 75px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.base .search img{
+    width: 20px;
+    height: 20px;
+
+}
+
+/* Layout of table */
+.info-table{
+    position: relative;
+}
+
+.info-table .sort{
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 27px;
+    color: #9EAAB4;
+
+}
+.info-table .sort p a{
+    border-bottom: 2px dotted #333333;
+    display: inline;
+    cursor: pointer;
+    font-weight: 500;
+
+}
+.info-table .sort p a:active{
+    color: #333333 ;
+}
+
+
+.custom-table {
+    position: relative;
+    border-collapse: collapse;
+    width: 941px;
+    height: 35px;
+    margin-top: 75px;
+    margin-left: 27px;
+    font-family: Montserrat, sans-serif;
+
+}
+.custom-table tr:nth-child(2)::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 910px;
+    left: 15px;
+    stroke-width: 1px;
+    border: 1px;
+    height: 1px;
+    background: #F7F7F7;
+}
+
+.custom-table th{
+    color: #9EAAB4;
+    font-weight: 100;
+    background-color: #FFFFFF;
+    font-size: 14px;
+}
+.custom-table th, .custom-table td {
+    padding: 30px;
+    text-align: left;
+    border: none;
+    background-color: #FFFFFF;
+
+    color: #9EAAB4;
+
+
+}
+
+
+/* Чередование цветов строк */
+.custom-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.custom-table .username{
+    font-weight: bold;
+    color: #0CB4F1;
+}
+
+
+.custom-table img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+
+    cursor: pointer;
+    transition: all 600ms ease;
+
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: #333333;
+}
+.custom-table img:hover{
+    color: #333333;
+    scale: 1.1;
+}
+.base .pagination{
+    position: absolute;
+    margin-top: 880px;
+    margin-left: 350px;
+    padding: 5px;
+    color: #333333;
+}
+.base .pagination a {
+    text-decoration: none;
+    color: #2a9d8f;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 600ms ease;
+}
+.base .pagination a:hover{
+    color: #333333;
+}
+
+.modal{
+    margin-top: -500px;
+    margin-left: 1050px;
+    width: 600px;
+    height: 200px;
+    border-radius: 8px;
+    background: #ffffff;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    display: none;
+}
+.modal p{
+    margin-top: 70px;
+}
+.modal .yes{
+    width: 150px;
+    height: 40px;
+    padding: 6px 36px 6px 36px;
+    font-size: 16px;
+    border-radius: 3px;
+    border: none;
+    background: #E0E0E0 ;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 600ms ease;
+}
+.modal .no{
+    font-size: 16px;
+    width: 150px;
+    height: 40px;
+    padding: 6px 36px 6px 36px;
+    border-radius: 3px;
+    border: none;
+    background: #0CB4F1 ;
+    cursor: pointer;
+    color: #ffffff;
+    margin-top: 15px;
+    margin-left: 25px;
+
+}

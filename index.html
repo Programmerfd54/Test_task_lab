@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Список пользователей</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/73db8af01b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        <div class="base">
+            <h1>Список пользователей</h1>
+            <div class="search">
+                <input type="text" class="custom-input" id="poisk" placeholder="Поиск по имени или email">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a class="clear" id="clean"> <img src="clean.svg" alt="Очистить"> Очистить фильтр</a>
+            </div>
+
+            <div class="info-table">
+                <div class="sort">
+                    <p>Сортировка:
+                        <a id="sortDate">Дата регистрации</a>
+                        <a id="sortRating" style="margin-left: 5px">Рейтинг</a>
+                    </p>
+                </div>
+                <table style="border-radius: 5px" class="custom-table" id="table">
+                <!--
+                    <tr>
+                          <th>Имя пользователя</th>
+                         <th>E-mail</th>
+                         <th>Дата регистрации</th>
+                         <th>Рейтинг</th>
+                         <th></th>
+
+                    </tr>
+                    <tr>
+                         <td class="username">Username</td>
+                           <td>test@test.ru</td>
+                           <td>test@test.ru</td>
+                           <td>12</td>
+                           <td><img class="close" src="img/cancel.svg" alt="delete"></td>
+                    </tr>
+                    -->
+
+                </table>
+            </div>
+                <div class="pagination">
+                    <a href="#" id="prevPage">Предыдущая</a>
+                    <a href="#" id="nextPage">Следующая</a>
+                </div>
+        </div>
+
+        <!-- Модальное окно -->
+        <div class="modal" id="deleteModal">
+            <p>Вы уверены, что хотите удалить пользователя?</p>
+            <button class="yes">Да</button>
+            <button class="no">Нет</button>
+        </div>
+
+        <script src="script.js" async></script>
+</body>
+</html>
