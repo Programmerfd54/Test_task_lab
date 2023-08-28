@@ -123,6 +123,7 @@ body {
     font-weight: 100;
     background-color: #FFFFFF;
     font-size: 14px;
+    width: 215px;
 }
 .custom-table th, .custom-table td {
     padding: 30px;
@@ -165,7 +166,7 @@ body {
 }
 .base .pagination{
     position: absolute;
-    margin-top: 850px;
+    margin-top: 870px;
     margin-left: 350px;
     padding: 5px;
     color: #333333;
