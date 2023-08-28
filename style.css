@@ -99,14 +99,14 @@ body {
 .custom-table {
     position: relative;
     border-collapse: collapse;
-    width: 1000px;
+    width: 941px;
     height: 35px;
     margin-top: 75px;
     margin-left: 27px;
     font-family: Montserrat, sans-serif;
 
 }
-.custom-table tr:nth-child(2)::after {
+.custom-table tr::after {
     position: absolute;
     content: "";
     display: block;
@@ -119,7 +119,7 @@ body {
 }
 
 .custom-table th{
-    position:absolute
+
     color: #9EAAB4;
     font-weight: 100;
     background-color: #FFFFFF;
@@ -131,7 +131,7 @@ body {
     text-align: left;
     border: none;
     background-color: #FFFFFF;
-    
+
     color: #9EAAB4;
 
 
