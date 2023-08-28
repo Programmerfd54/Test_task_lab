@@ -24,7 +24,7 @@ body {
 }
 
 .base .search {
-    width: 941px;
+    width: 1000px;
     height: 120px;
     margin-top: 20px;
     margin-left: 30px;
@@ -35,7 +35,7 @@ body {
 
 .base .search .custom-input {
     margin: 15px;
-    width: 800px;
+    width: 890px;
     height: 40px;
     border-radius: 4px;
     background: #eceff0;
@@ -99,7 +99,7 @@ body {
 .custom-table {
     position: relative;
     border-collapse: collapse;
-    width: 941px;
+    width: 1000px;
     height: 35px;
     margin-top: 75px;
     margin-left: 27px;
@@ -119,18 +119,19 @@ body {
 }
 
 .custom-table th{
+    position:absolute
     color: #9EAAB4;
     font-weight: 100;
     background-color: #FFFFFF;
     font-size: 14px;
-    width: 215px;
+  
 }
 .custom-table th, .custom-table td {
     padding: 30px;
     text-align: left;
     border: none;
     background-color: #FFFFFF;
-
+    
     color: #9EAAB4;
 
 
@@ -177,7 +178,8 @@ body {
     font-size: 20px;
     font-weight: bold;
     transition: all 600ms ease;
-    cursor: custom;
+    cursor: pointer;
+    outline:none
 }
 .base .pagination a:hover{
     color: #333333;
