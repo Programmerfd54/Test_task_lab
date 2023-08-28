@@ -166,8 +166,7 @@ body {
     scale: 1.1;
 }
 .base .pagination{
-    position: absolute;
-    margin-top: 870px;
+     margin-top: 30px;
     margin-left: 350px;
     padding: 5px;
     color: #333333;
