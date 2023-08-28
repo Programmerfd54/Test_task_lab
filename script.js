@@ -140,7 +140,7 @@
         updatePaginationLinks();
     });
 
-    // Сортировка по рейтенгу
+    // Сортировка по рейтингу
     sortRating.addEventListener("click", () => {
         if (currentSortBy === "rating") {
             sortByRatingAscending = !sortByRatingAscending;
